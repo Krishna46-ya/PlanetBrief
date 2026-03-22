@@ -1,36 +1,108 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Planet Brief
+
+> A climate change awareness web app built for youth — explore the facts, test your knowledge, and discover actions that make a real difference.
+
+Built with **Next.js 14**, **TypeScript**, and **Motion** as a college group project.
+
+---
+
+## Pages
+
+| Route | Description |
+|-------|-------------|
+| `/` | Landing page — hero, key stats, action tips, quiz CTA |
+| `/quiz` | 6-question climate IQ quiz with scoring and results |
+
+---
+
+## Tech Stack
+
+- **[Next.js 14](https://nextjs.org/)** — App Router, file-based routing
+- **TypeScript** — full type safety across all components
+- **[Motion](https://motion.dev/)** — page transitions, scroll animations, micro-interactions
+- **Google Fonts** — Playfair Display for headings
+
+---
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/planet-brief.git
+cd planet-brief
+
+# Install dependencies
+npm install
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+planet-brief/
+├── app/
+│   ├── layout.tsx          # Root layout with metadata & fonts
+│   ├── page.tsx            # Landing page
+│   └── quiz/
+│       └── page.tsx        # Quiz page
+├── public/
+│   └── favicon-512x512.png
+├── README.md
+└── package.json
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Features
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Climate facts** — four key statistics presented on the landing page
+- **Action tips** — six categorised tips with impact ratings (Medium → Very High)
+- **Interactive quiz** — 6 questions, animated answer feedback, fact reveals, and a results screen with score tiers
+- **Smooth animations** — word-by-word hero reveal, scroll-triggered section entries, parallax rings, and animated progress ring on the quiz
+- **Fully responsive** — works on mobile, tablet, and desktop
+- **No login required** — fully static, no backend or database
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## Quiz Score Tiers
+
+| Score | Tier |
+|-------|------|
+| 0 – 2 | Climate Newcomer |
+| 3 – 4 | Climate Aware |
+| 5 | Climate Literate |
+| 6 | Climate Champion |
+
+---
+
+
+## Acknowledgements
+
+- Climate data sourced from [IPCC](https://www.ipcc.ch/), [NASA](https://climate.nasa.gov/), and [Our World in Data](https://ourworldindata.org/)
+- Built as part of a college project on increasing climate change awareness among youth
+
+---
+
+## License
+
+This project is for educational purposes only.
