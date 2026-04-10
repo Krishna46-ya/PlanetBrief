@@ -1,108 +1,122 @@
-# 🌍 Planet Brief
+# 📊 Attendance Tracker Website
 
-> A climate change awareness web app built for youth — explore the facts, test your knowledge, and discover actions that make a real difference.
-
-Built with **Next.js 14**, **TypeScript**, and **Motion** as a college group project.
+A simple and efficient web-based Attendance Tracker that helps manage and monitor attendance records for students or employees.
 
 ---
 
-## Pages
+## 🚀 Features
 
-| Route | Description |
-|-------|-------------|
-| `/` | Landing page — hero, key stats, action tips, quiz CTA |
-| `/quiz` | 6-question climate IQ quiz with scoring and results |
-
----
-
-## Tech Stack
-
-- **[Next.js 14](https://nextjs.org/)** — App Router, file-based routing
-- **TypeScript** — full type safety across all components
-- **[Motion](https://motion.dev/)** — page transitions, scroll animations, micro-interactions
-- **Google Fonts** — Playfair Display for headings
+* ✅ User authentication (Login/Signup)
+* 📅 Mark daily attendance
+* 📈 View attendance reports
+* 🧑‍🎓 Manage users (students/employees)
+* 📊 Dashboard with summary statistics
+* 🔍 Search and filter records
 
 ---
 
-## Getting Started
+## 🛠️ Tech Stack
 
-### Prerequisites
+* **Frontend:** HTML, CSS, JavaScript (or React)
+* **Backend:** Node.js / Express (or Django / Flask)
+* **Database:** MongoDB / MySQL
+* **Version Control:** Git & GitHub
 
-- Node.js 18+
-- npm or yarn
+---
 
-### Installation
+## 📂 Project Structure
 
-```bash
-# Clone the repository
-git clone https://github.com/your-username/planet-brief.git
-cd planet-brief
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
+```
+attendy/
+│── frontend/
+│── backend/
+│── database/
+│── routes/
+│── models/
+│── public/
+│── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+---
 
-### Build for Production
+## ⚙️ Installation & Setup
 
-```bash
-npm run build
+1. Clone the repository:
+
+```
+git clone https://github.com/your-username/Attendy.git
+```
+
+2. Navigate to the project folder:
+
+```
+cd Attendy
+```
+
+3. Install dependencies:
+
+```
+npm install
+```
+
+4. Start the server:
+
+```
 npm start
 ```
 
----
-
-## Project Structure
+5. Open in browser:
 
 ```
-planet-brief/
-├── app/
-│   ├── layout.tsx          # Root layout with metadata & fonts
-│   ├── page.tsx            # Landing page
-│   └── quiz/
-│       └── page.tsx        # Quiz page
-├── public/
-│   └── favicon-512x512.png
-├── README.md
-└── package.json
+http://localhost:3000
 ```
 
 ---
 
-## Features
+## 🔐 Environment Variables
 
-- **Climate facts** — four key statistics presented on the landing page
-- **Action tips** — six categorised tips with impact ratings (Medium → Very High)
-- **Interactive quiz** — 6 questions, animated answer feedback, fact reveals, and a results screen with score tiers
-- **Smooth animations** — word-by-word hero reveal, scroll-triggered section entries, parallax rings, and animated progress ring on the quiz
-- **Fully responsive** — works on mobile, tablet, and desktop
-- **No login required** — fully static, no backend or database
+Create a `.env` file in the root directory and add:
 
----
-
-## Quiz Score Tiers
-
-| Score | Tier |
-|-------|------|
-| 0 – 2 | Climate Newcomer |
-| 3 – 4 | Climate Aware |
-| 5 | Climate Literate |
-| 6 | Climate Champion |
+```
+PORT=3000
+DB_URI=your_database_connection_string
+JWT_SECRET=your_secret_key
+```
 
 ---
 
+## 📸 Screenshots
 
-## Acknowledgements
-
-- Climate data sourced from [IPCC](https://www.ipcc.ch/), [NASA](https://climate.nasa.gov/), and [Our World in Data](https://ourworldindata.org/)
-- Built as part of a college project on increasing climate change awareness among youth
+*Add screenshots of your project here*
 
 ---
 
-## License
+## 🤝 Contributing
 
-This project is for educational purposes only.
+Contributions are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 👨‍💻 Author
+
+**Krishna Yadav**
+
+* GitHub: https://github.com/Krishna46-ya
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, give it a ⭐ on GitHub!
