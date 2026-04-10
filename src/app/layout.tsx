@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Planet Brief",
+  title: "AttendX",
   description: "Climate change awareness for youth",
   icons: '/favicon-512x512.png'
 };
