@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react";
 import { motion, AnimatePresence, useInView, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface AttendanceResult {
@@ -240,9 +241,9 @@ export default function AttendanceCrisisPage() {
         </div>
 
         <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
-          <motion.a href="#calculator" whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
+          <Link href="/calculate"><motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}
             style={{ background: "var(--red)", color: "#fff", padding: "10px 22px", borderRadius: 10, fontSize: 14, fontWeight: 700, display: "block" }}
-          >Get Started</motion.a>
+          >Get Started</motion.div></Link>
           <button onClick={() => setMenuOpen(!menuOpen)} style={{ background: "transparent", color: "#fff", fontSize: 22, display: "none" }}>☰</button>
         </div>
       </motion.nav>
@@ -288,9 +289,9 @@ export default function AttendanceCrisisPage() {
           </motion.p>
 
           <motion.div variants={fadeUp} custom={3} style={{ display: "flex", gap: 16, justifyContent: "center", flexWrap: "wrap", marginBottom: 60 }}>
-            <motion.a href="#calculator" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
+            <Link href="/calculate"><motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               style={{ background: "var(--red)", color: "#fff", padding: "16px 36px", borderRadius: 12, fontSize: 16, fontWeight: 700, display: "inline-block" }}
-            >Calculate Now →</motion.a>
+            >Calculate Now →</motion.div></Link>
             <motion.a href="#how-it-works" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               style={{ background: "rgba(255,255,255,0.06)", border: "1px solid var(--border)", color: "#fff", padding: "16px 36px", borderRadius: 12, fontSize: 16, fontWeight: 700, display: "inline-block" }}
             >See How It Works</motion.a>
@@ -690,9 +691,9 @@ export default function AttendanceCrisisPage() {
           <motion.div variants={fadeUp}>
             <h2 style={{ fontSize: "clamp(32px, 5vw, 60px)", fontWeight: 800, letterSpacing: "-0.04em", marginBottom: 20, lineHeight: 1.05 }}>Stop Guessing. Start Knowing.</h2>
             <p style={{ color: "var(--muted)", fontSize: 18, marginBottom: 40 }}>Calculate your attendance right now — before it's too late.</p>
-            <motion.a href="#calculator" whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
+            <Link href="/calculate"><motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}
               style={{ background: "var(--red)", color: "#fff", padding: "18px 48px", borderRadius: 14, fontSize: 18, fontWeight: 800, display: "inline-block" }}
-            >Calculate My Attendance →</motion.a>
+            >Calculate My Attendance →</motion.div></Link>
           </motion.div>
         </div>
       </Section>
