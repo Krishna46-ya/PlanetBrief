@@ -54,12 +54,20 @@ const fadeUp = {
 const stagger = { visible: { transition: { staggerChildren: 0.08 } } };
 
 // ─── Reusable Section Wrapper ─────────────────────────────────────────────────
-function Section({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+interface SectionProps {
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+  style?: React.CSSProperties;
+}
+function Section({ children, className = "", id, style }: SectionProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
   return (
     <motion.section
       ref={ref}
+      id={id}
+      style={style}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={stagger}
